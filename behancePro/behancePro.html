@@ -14,9 +14,8 @@
   </head>
   <body>
     <nav class="navbar">
-      <!-- Left Side -->
       <div class="nav-left">
-        <a href="../index.html"><img
+        <a href="../main.html"><img
           src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg"
           class="logo"
           alt="Behance Logo"
@@ -24,7 +23,7 @@
 
         <div class="nav-links">
           <div class="dropdown">
-            <a href="../index.html"><button class="dropbtn">
+            <a href="../main.html"><button class="dropbtn">
               Explore <i class="fas fa-chevron-down"></i>
             </button></a>
             
@@ -45,13 +44,11 @@
         </div>
       </div>
 
-      <!-- Center: Search Bar -->
       <div class="search-container">
         <input type="text" placeholder="Search..." class="search-bar" />
         <button class="search-btn"><i class="fas fa-search"></i></button>
       </div>
 
-      <!-- Right Side -->
       <div class="nav-right">
         <a href="#container-seven"><button class="btn-pro">Upgrade to <span>PRO</span></button></a>
         <button class="btn-share">Share Your Work</button>
@@ -79,7 +76,7 @@
             <button id="modal-upgradeTo">Upgrade to <span>PRO</span></button>
             <hr class="hrdivider">
             <div class="modal-mid">
-              <a href="../main/profile/profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
+              <a href="../profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
                 <p>Adobe PortFolio</p>
                 <p>Edit my Availability</p>
                 <p>Starts Insights</p>
@@ -847,18 +844,16 @@
 <script>
 
 
-  const userAvatar = document.querySelector('.user-avatar'); // Corrected selection
+  const userAvatar = document.querySelector('.user-avatar'); 
   const modal = document.getElementById('userModal');
   const modalOverlay = document.getElementById('modalOverlay');
   const closeModal = document.getElementById('closeModal');
   const logoutBtn = document.getElementById('logoutBtn');
-  // Open Modal
   userAvatar.addEventListener('mouseover', () => {
       modal.style.display = 'block';
       modalOverlay.style.display = 'block';
   });
 
-  // Close Modal
   closeModal.addEventListener('click', () => {
       modal.style.display = 'none';
       modalOverlay.style.display = 'none';
@@ -869,15 +864,13 @@
       modalOverlay.style.display = 'none';
   });
 
-  // Logout Functionality
   logoutBtn.addEventListener('click', () => {
       alert('Logged out successfully!');
-      window.location.href = '../main/profile/signup.html'; // Redirect to sign-in page
+      window.location.href = '../index.html'; 
   });
 
- // Function to handle file selection
 function handleFileUpload(event) {
-  const file = event.target.files[0]; // Get the selected file
+  const file = event.target.files[0]; 
   if (file) {
       const reader = new FileReader();
       reader.onload = function (e) {
@@ -886,7 +879,7 @@ function handleFileUpload(event) {
           // Set the background image
           const container = document.getElementById('container-one');
           container.style.backgroundImage = `url(${imageURL})`;
-          container.style.backgroundSize = '1450px 310px'; // Fixed size
+          container.style.backgroundSize = '1450px 310px'; 
           container.style.backgroundPosition = 'center';
           container.style.backgroundRepeat = 'no-repeat';
 
@@ -898,15 +891,12 @@ function handleFileUpload(event) {
   }
 }
 
-// Retrieve user data from localStorage
 const userName = localStorage.getItem("userName");
 const userEmail = localStorage.getItem("userEmail");
 
-// Display user data on the profile page
 document.getElementById("modalUserName").textContent = userName || "Guest";
 document.getElementById("emailId").textContent = userEmail || "No email found";
 
-// Update the profile section
 document.querySelector("#profile-container h3").textContent = userName || "Guest";
   
 </script>

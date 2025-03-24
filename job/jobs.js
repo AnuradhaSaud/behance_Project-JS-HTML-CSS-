@@ -110,29 +110,25 @@ document.addEventListener("DOMContentLoaded", function () {
     const closeModal = document.getElementById("closeModal");
     const logoutBtn = document.getElementById("logoutBtn"); // Select the button
 
-    // Open Modal
     userAvatar.addEventListener("click", function () {
         modal.style.display = "block";
         modalOverlay.style.display = "block";
     });
 
-    // Close Modal
     closeModal.addEventListener("click", function () {
         modal.style.display = "none";
         modalOverlay.style.display = "none";
     });
 
-    // Close Modal on Clicking Outside
     modalOverlay.addEventListener("click", function () {
         modal.style.display = "none";
         modalOverlay.style.display = "none";
     });
 
-    // ✅ Logout Functionality
-    if (logoutBtn) { // Ensure logout button exists
+    if (logoutBtn) { 
         logoutBtn.addEventListener('click', () => {
             alert('Logged out successfully!');
-            window.location.href = '../main/profile/signup.html'; // Redirect to sign-in page
+            window.location.href = '../index.html'; 
         });
     } else {
         console.error("Logout button not found!");
@@ -140,18 +136,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Function to handle file selection
 function handleFileUpload(event) {
-const file = event.target.files[0]; // Get the selected file
+const file = event.target.files[0]; 
 if (file) {
     const reader = new FileReader();
     reader.onload = function (e) {
         const imageURL = e.target.result;
 
-        // Set the background image
         const container = document.getElementById('container-one');
         container.style.backgroundImage = `url(${imageURL})`;
-        container.style.backgroundSize = '1450px 310px'; // Fixed size
+        container.style.backgroundSize = '1450px 310px'; 
         container.style.backgroundPosition = 'center';
         container.style.backgroundRepeat = 'no-repeat';
 

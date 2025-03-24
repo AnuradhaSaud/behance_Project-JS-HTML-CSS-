@@ -7,7 +7,6 @@
     font-family: "ABC Whyte", sans-serif;
   }
 
-  /* Navbar Styling */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -16,12 +15,11 @@
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top: 0;  /* Ensure it stays at the top */
-    z-index: 100;  /* Keeps navbar above other elements */
-    flex-wrap: wrap; /* Prevents breaking on small screens */
+    top: 0;  
+    z-index: 100;  
+    flex-wrap: wrap; 
 }
 
-  /* Left Side */
   .nav-left {
     display: flex;
     align-items: center;
@@ -32,7 +30,6 @@
     margin-right: 15px;
   }
 
-  /* Navigation Links */
   .nav-links {
     display: flex;
     align-items: center;
@@ -81,7 +78,6 @@
     display: block;
   }
 
-  /* PRO Badge */
   .pro-badge {
     font-weight: bold;
   }
@@ -94,7 +90,6 @@
     border-radius: 4px;
   }
 
-  /* Search Bar */
   .search-container {
     display: flex;
     align-items: center;
@@ -117,7 +112,6 @@
     cursor: pointer;
   }
 
-  /* Right Side */
   .nav-right {
     display: flex;
     align-items: center;
@@ -157,7 +151,6 @@
     width: 50px;
   }
 
-  /* Icons */
   .nav-right i {
     font-size: 18px;
     margin-right: 15px;
@@ -165,7 +158,6 @@
   }
   
 
-  /* Responsive Design */
   @media (max-width: 768px) {
     .nav-links,
     .search-container {
@@ -550,12 +542,10 @@ input:checked + .slider:before {
     position: relative;
 }
 
-/* Hide the file input but keep it functional */
 #attachments-container-two {
     display: none;
 }
 
-/* Style the label to look like a button */
 .custom-upload-btn {
     width: 120px;
     height: 30px;

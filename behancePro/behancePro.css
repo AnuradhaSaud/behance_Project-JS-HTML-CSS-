@@ -5,7 +5,6 @@
     font-family: Arial, sans-serif;
   }
 
-  /* Navbar Styling */
   .navbar {
     display: flex;
     justify-content: space-between;
@@ -13,12 +12,11 @@
     background: white;
     padding: 10px 20px;
     position: sticky;
-    top: 0;  /* Ensure it stays at the top */
-    z-index: 100;  /* Keeps navbar above other elements */
-    flex-wrap: wrap; /* Prevents breaking on small screens */
+    top: 0; 
+    z-index: 100;  
+    flex-wrap: wrap; 
   }
 
-  /* Left Side */
   .nav-left {
     display: flex;
     align-items: center;
@@ -29,7 +27,6 @@
     margin-right: 15px;
   }
 
-  /* Navigation Links */
   .nav-links {
     display: flex;
     align-items: center;
@@ -78,7 +75,6 @@
     display: block;
   }
 
-  /* PRO Badge */
   .pro-badge {
     font-weight: bold;
   }
@@ -91,7 +87,6 @@
     border-radius: 4px;
   }
 
-  /* Search Bar */
   .search-container {
     display: flex;
     align-items: center;
@@ -114,7 +109,6 @@
     cursor: pointer;
   }
 
-  /* Right Side */
   .nav-right {
     display: flex;
     align-items: center;
@@ -154,7 +148,6 @@
     width: 50px;
   }
 
-  /* Icons */
   .nav-right i {
     font-size: 18px;
     margin-right: 15px;
@@ -248,13 +241,13 @@ padding:80px;
 .container-two-div1 > div a{
     font-size: 14px;
     margin-top: 50px;
-    display: inline-block; /* or block */
+    display: inline-block; 
 }
 .container-two-div1 > div:nth-child(2) a,
 .container-two-div1 > div:nth-child(3) a {
     font-size: 14px;
     margin-top: 50px;
-    display: inline-block; /* or block */
+    display: inline-block; 
 }
 
 
@@ -339,9 +332,9 @@ padding:80px;
 }
 
 .container-three-div2 img {
-    width: 100%;  /* Ensures the image fills its container */
-    height: 100%; /* Matches the height of the div */
-    object-fit: cover; /* Ensures the image fills without distortion */
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
     border-radius: 20px 0px 0px 20px;
 }
 
@@ -491,7 +484,7 @@ margin-bottom:100px;
   border-radius:100%;
 }
 .container-six-div2::-webkit-scrollbar {
-  display: none; /* Chrome, Safari */
+  display: none; 
 }
 
 
@@ -537,8 +530,8 @@ margin-bottom:100px;
   list-style:none;
   font-size:15px;
   margin-bottom:5px;
-  display: flex; /* Aligns icon and text */
-  align-items: center; /* Vertically centers them */
+  display: flex;
+  align-items: center; 
   gap: 8px; 
 }
 
@@ -755,7 +748,6 @@ margin-bottom:100px;
 
 
 
-  /* Responsive Design */
   @media (max-width: 768px) {
     .nav-links,
     .search-container {

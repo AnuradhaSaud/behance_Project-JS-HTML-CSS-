@@ -5,7 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -14,12 +13,11 @@
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top: 0;  /* Ensure it stays at the top */
-    z-index: 100;  /* Keeps navbar above other elements */
-    flex-wrap: wrap; /* Prevents breaking on small screens */
+    top: 0;  
+    z-index: 100;  
+    flex-wrap: wrap; 
 }
 
-/* Left Side */
 .nav-left {
     display: flex;
     align-items: center;
@@ -30,7 +28,6 @@
     margin-right: 15px;
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
     align-items: center;
@@ -80,7 +77,6 @@
     display: block;
 }
 
-/* PRO Badge */
 .pro-badge {
     font-weight: bold;
 }
@@ -93,7 +89,6 @@
     border-radius: 4px;
 }
 
-/* Search Bar */
 .search-container {
     display: flex;
     align-items: center;
@@ -170,7 +165,7 @@
         background-size: 1450px 310px;
         background-position: center;
         background-repeat: no-repeat;
-        cursor: pointer; /* Shows pointer to indicate it's clickable */
+        cursor: pointer; 
         position:relative;
         
 

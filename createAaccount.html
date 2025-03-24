@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Create an Account</title>
     <style>
-      /* General Styling */
       body {
         margin: 0;
         padding: 0;
@@ -20,7 +19,6 @@
         justify-content: center;
       }
 
-      /* Container */
       .container {
         background: rgba(255, 255, 255, 0.95);
         padding: 50px;
@@ -28,7 +26,6 @@
         text-align: center;
       }
 
-      /* Headings */
       h2 {
         margin: 5px 0 15px;
         font-size: 24px;
@@ -47,7 +44,6 @@
         text-decoration: underline;
       }
 
-      /* Input Fields */
       label {
         display: block;
         text-align: left;
@@ -63,7 +59,6 @@
         border-radius: 5px;
       }
 
-      /* Password Field with Eye Icon */
       .password-container {
         position: relative;
       }
@@ -77,7 +72,6 @@
         font-size: 14px;
       }
 
-      /* Continue Button */
       .continue-btn {
         width: 100%;
         padding: 10px;
@@ -101,7 +95,6 @@
         <h2>Create an Account</h2>
         <p>Already have an account? <a href="signup.html">Sign in</a></p>
 
-        <!-- Input Fields -->
         <label for="name">Name:</label>
         <input type="text" id="name" placeholder="Enter your name" required />
         <label for="email">Email address</label>
@@ -123,11 +116,10 @@
     </div>
 
     <script>
-      // Handle form submission
       document
       .querySelector(".continue-btn")
       .addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault(); 
 
         let name = document.getElementById("name").value;
         let email = document.getElementById("email").value;
@@ -136,17 +128,14 @@
         if (name === "" || email === "" || password === "") {
           alert("Please fill in all fields!");
         } else {
-          // Store the user data in localStorage
           localStorage.setItem("userName", name);
           localStorage.setItem("userEmail", email);
           localStorage.setItem("userPassword", password);
           alert("Account created successfully!");
-          // Redirect to the profile page
           window.location.href = "profile.html";
         }
       });
 
-      // Toggle Password Visibility
       document
         .querySelector(".toggle-password")
         .addEventListener("click", function () {
