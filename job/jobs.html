@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jobs</title>
+    <link rel="stylesheet" type="text/css" href="jobs.css">    
+    <script src="jobs.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+
+    <nav class="navbar">
+        <div class="nav-left">
+            <a href="../main/main.html"><img src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg" class="logo" alt="Behance Logo"></a>
+            
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="../main/main.html"><button class="dropbtn">
+                        Explore <i class="fas fa-chevron-down"></i>
+                      </button></a>
+                   
+                </div>
+                <a href="jobs.html">Jobs</a>
+                <a href="../behancePro/behancePro.html" class="pro-badge">Behance <span>PRO</span></a>
+                <div class="dropdown">
+                    <button  onclick="location.href='../hireFreelance/hireFreelancer.html'" class="dropbtn">Hire Freelancers <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="../hireFreelance/MyFreelanceProjects.html">My Freelance Project</a>
+                        <a href="../job/jobs.html">Find Creatives</a>
+                        <a href="../hireFreelance/hireFreelancer.html">Hiring on Behance</a>
+                        <a href="../hireFreelance/newFreelanceProject.html">New Freelance Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <div class="nav-right">
+            <button class="btn-pro">Upgrade to <span>PRO</span></button>
+            <button class="btn-share">Share Your Work</button>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-avatar"></div>
+            <img src="https://i.pinimg.com/736x/3e/e3/af/3ee3af2ae164bf631c5ebc13d40e95b1.jpg" class="adobe-logo" alt="Adobe Logo">
+        </div>
+    </nav>
+
+
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="userModal">
+        <span class="close-modal" id="closeModal"></span>
+        <div class="modal-content">
+            <img src="https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658" style="width:60px; height:60px; border:0.5px solid rgb(176, 176, 176); border-radius:100px; padding:1px"/>
+            <p><span id="modalUserName">Anuradha Saud</span></p>
+            <p id="emailId">anuradhasinghsaud@gmail.com</p>
+            <button id="modal-upgradeTo">Upgrade to <span>PRO</span></button>
+            <hr class="hrdivider">
+            <div class="modal-mid">
+                <a href="../main/profile/profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
+                <p>Adobe PortFolio</p>
+                <p>Edit my Availability</p>
+                <p>Starts Insights</p>
+                <p>Manage Freelance Projects</p>
+                <p>Purchase</p>
+                <p>Settings</p>
+            </div>
+            <hr class="hrdivider" >
+            <div class="modal-last">
+                <p>Manage Adobe ID</p>
+                <p>Help</p>
+                <hr class="hrdivider">
+                <p id="logoutBtn">Sign out</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+    
+
+
+
+
+
+
+
+    <div id="div1">
+
+        <h1>Creative Jobs</h1>
+        <p>Browse and discover your next opportunity </p>
+    
+    </div>
+
+    <div id="job-container">
+        <div class="sidebar">
+            <div>
+                <button>New Job</button>
+            </div>
+            <div id="divider"></div>
+            <div>
+                <h4>Categories</h4>
+                <ul id="category-list">
+                    <li><a href="#">All</a></li>
+                    <p>POPULAR</p>
+                    <li><a href="#">Logo Designer</a></li>
+                    <li><a href="#">Branding Services</a></li>
+                    <li><a href="#">Social Media Design</a></li>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">Illustrations</a></li>
+                    <li><a href="#">Packaging Design</a></li>
+                    <p>Graphic Design</p>
+                    <li><a href="#">Stationery Design</a></li>
+                    <li><a href="#">Fonts & Typography</a></li>
+                    <li><a href="#">Branding Services</a></li>
+                    <li><a href="#">Invitation Design</a></li>
+                    <p>Web & App Design</p>
+                    <li><a href="#">Website Design</a></li>
+                    <li><a href="#">App Design</a></li>
+                    <li><a href="#">UI/UX Design</a></li>
+                    <li><a href="#">Landing Page Design</a></li>
+                    <li><a href="#">Icon Design</a></li>
+                    
+                </ul>
+            </div>
+        </div>    
+    
+
+
+
+        <div id="job-search">
+            <div>
+                <input type="text" class="search-bar2" placeholder="Search Full-Time Jobs..."/>
+            </div>
+            <div id="job-cards"></div>
+        </div>
+
+    
+
+</div>
+
+
+
+   
+
+
+</body>
+</html>
+

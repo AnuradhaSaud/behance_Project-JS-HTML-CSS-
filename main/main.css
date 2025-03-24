@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;  /* Ensure it stays at the top */
+    z-index: 100;  /* Keeps navbar above other elements */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+}
+
+/* Left Side */
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 80px;
+    margin-right: 15px;
+}
+
+/* Navigation Links */
+.nav-links {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a, .dropbtn {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.dropbtn {
+    border: none;
+    background: none;
+    font-size: 14px;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+    justify-content:center;
+    font-size:12px;
+}
+
+.dropdown-content a:hover {
+    background: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* PRO Badge */
+.pro-badge {
+    font-weight: bold;
+}
+
+.pro-badge span {
+    background: blue;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 4px;
+}
+
+/* Search Bar */
+.search-container {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 5px;
+    border-radius: 20px;
+}
+
+.search-bar {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: transparent;
+    width:450px;
+}
+
+.search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+}
+
+.btn-pro, .btn-share {
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius:20px;
+}
+
+.btn-pro {
+    background: blue;
+    color: white;
+
+}
+
+.btn-share {
+    background: #f1f1f1;
+}
+.user-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+}
+
+.adobe-logo {
+    width: 50px;
+}
+
+.nav-right i {
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .nav-links, .search-container {
+        display: none;
+    }
+}
+
+
+
+
+
+.add-story {
+    background: transparent;
+    color: rgb(154, 154, 154);
+    font-size: 24px;
+}
+
+/* Improve Story Text */
+.story p {
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Container Layout Fixes */
+#container-one > div {
+    display: flex;
+    padding: 20px;
+}
+
+#container-one > div h3 {
+    font-size: 15px;
+    display: flex; 
+    align-items: center; 
+    gap: 8px; 
+}
+
+#divider {
+    width: 2px;
+    height: 20px;
+    background-color: rgb(214, 214, 214);
+    margin: 0px 13px;
+}
+
+/* Material Symbols */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+/* Post Container */
+#container-one {
+    overflow: visible; 
+}
+
+#divider2 {
+    width: 97%;
+    height: 1px;
+    margin: auto;
+    background-color: rgb(214, 214, 214);
+}
+
+/* Grid Layout for Posts */
+#post-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 22px;
+}
+
+#followingpost{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    padding: 22px;
+}
+
+/* Responsive Grid Layout */
+@media (max-width: 1024px) {
+    #post-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #post-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Post Images */
+.Post-Div > div img {
+    width: 100%;
+    max-width: 330px;
+    height: 230px;
+}
+
+/* Post Info */
+.post-div2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.post-div2 > :first-child p {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.post-div2 > :nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    font-weight: bold;
+    width: 120px;
+    margin-right: 10px;
+}
+
+/* Story Container */
+.story-container {
+    display: flex;  /* Ensures stories are in a row */
+    gap: 30px;  /* Adds spacing between stories */
+    overflow-x: auto;  /* Enables horizontal scrolling if needed */
+    padding: 10px;
+    background: white;
+    border-radius: 10px;
+    white-space: nowrap;  /* Prevents wrapping to the next line */
+   
+}
+#story--maindiv{
+    margin-top:20px;
+}
+
+.story-text{
+    margin-left:15px;
+    font-size:12px;
+}
+
+/* Individual Story */
+.story {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color:#0057ff;
+}
+
+/* Story Image */
+.story img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Add Story Circle */
+.story-circle {
+    position: absolute;
+    font-size:30px;
+    color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    
+}
+
+/* Remove Story Button */
+.remove-story-btn {
+    background: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 8px 12px;
+    border-radius: 5px;
+    margin-top: 10px;
+    position: absolute;
+    bottom: 20px; /* Position below the modal */
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+
+/* Story Modal */
+.story-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+
+.story-modal img {
+    width: 300px;
+    height: 500px;
+    border-radius: 10px;
+}
+
+
+
+#fileInput {
+    display: none;
+}
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 38%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+}
+
+.modal-content {
+    margin-top: 5px;
+}
+
+.modal-content > #emailId{
+    font-size:12px;
+    color:rgb(153, 153, 153)
+}
+
+#modalUserName{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.modal-content #logoutBtn {
+    margin-top: 10px;
+    color:rgb(103, 103, 103);
+    border: none;
+    cursor: pointer;
+    background:transparent;
+    font-size:12px;
+    font-weight:bold;
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:10px;
+    
+}
+.modal-content #logoutBtn:hover{
+    background-color:rgb(193, 193, 193);
+    width:200px;
+}
+
+
+
+
+#modal-upgradeTo{
+    width:210px;
+    height:25px;
+    margin-top:10px;
+    font-size:12px;
+    background-color: rgba(0, 87, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+
+.modal-mid p{
+    font-size:12px;
+    font-weight:bold;
+    color:rgb(103, 103, 103);
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+.modal-mid p:hover{
+    background-color:rgb(193, 193, 193);
+    width:200px;
+}
+.modal-last p{
+    font-size:12px;
+    font-weight:bold;
+    color:rgb(103, 103, 103);
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:10px;
+}
+
+
+.hrdivider{
+    margin:10px 0px 10px 0px
+}
+

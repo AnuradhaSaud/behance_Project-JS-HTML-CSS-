@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Freelance Project</title>
+    <link rel="stylesheet" type="text/css" href="newFreelanceProject.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+          <!-- Left Side -->
+          <div class="nav-left">
+            <img onclick="location.href='../main/main.html'"
+              src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg"
+              class="logo"
+              alt="Behance Logo"
+            />
+    
+            <div class="nav-links">
+              <div class="dropdown">
+                <a href="../main/main.html"><button class="dropbtn">
+                  Explore <i class="fas fa-chevron-down"></i>
+                </button></a>
+               
+              </div>
+              <a href="../job/jobs.html">Jobs</a>
+              <a href="../behancePro/behancePro.html" class="pro-badge">Behance <span>PRO</span></a>
+              <div class="dropdown">
+                <button class="dropbtn"   onclick="location.href='hireFreelancer.html'">
+                  Hire Freelancers <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="../hireFreelance/MyFreelanceProjects.html">My Freelance Project</a>
+                  <a href="../job/jobs.html">Find Creatives</a>
+                  <a href="../hireFreelance/hireFreelancer.html">Hiring on Behance</a>
+                  <a href="../hireFreelance/newFreelanceProject.html">New Freelance Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+          <!-- Center: Search Bar -->
+          
+    
+          <!-- Right Side -->
+          <div class="nav-right">
+            <button class="btn-pro">Upgrade to <span>PRO</span></button>
+            <button class="btn-share">Share Your Work</button>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-avatar"></div>
+            <img
+              src="https://i.pinimg.com/736x/3e/e3/af/3ee3af2ae164bf631c5ebc13d40e95b1.jpg"
+              class="adobe-logo"
+              alt="Adobe Logo"
+            />
+          </div>
+        </nav>
+    
+    
+    
+    
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal" id="userModal">
+            <span class="close-modal" id="closeModal"></span>
+            <div class="modal-content">
+                <img src="https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658" style="width:60px; height:60px; border:0.5px solid rgb(176, 176, 176); border-radius:100px; padding:1px"/>
+                <p><span id="modalUserName">Anuradha Saud</span></p>
+                <p id="emailId">anuradhasinghsaud@gmail.com</p>
+                <button id="modal-upgradeTo">Upgrade to <span>PRO</span></button>
+                <hr class="hrdivider">
+                <div class="modal-mid">
+                    <a href="../main/profile/profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
+                    <p>Adobe PortFolio</p>
+                    <p>Edit my Availability</p>
+                    <p>Starts Insights</p>
+                    <p>Manage Freelance Projects</p>
+                    <p>Purchase</p>
+                    <p>Settings</p>
+                </div>
+                <hr class="hrdivider" >
+                <div class="modal-last">
+                    <p>Manage Adobe ID</p>
+                    <p>Help</p>
+                    <hr class="hrdivider">
+                    <p id="logoutBtn">Sign out</p>
+                </div>
+            </div>
+        </div>
+    
+    
+    
+    
+    
+    
+    
+    
+        <div id="hireNavbar">
+          <div >
+            <button><a href="../hireFreelance/MyFreelanceProjects.html" style="text-decoration:none; color:#333">My Freelance Projects</a></button>
+          </div>
+          <div>
+            <button><a href="../job/jobs.html" style="text-decoration:none; color:#333">Find Creatives</a></button>
+          </div>
+          <div>
+            <button><a href="hireFreelancer.html" style="text-decoration:none; color:#333">Hiring on Behance</a></button>
+          </div>
+          <div>
+            <button><a href="newFreelanceProject.html"style="text-decoration:none; color:#333">New Freelance Project</a></button>
+          </div>
+        </div>
+    
+        <div id="divider"></div>
+
+
+    <div class="container-heading">
+        <h1>New Freelance Project</h1>
+        <p>Create a brief to tailor your search for the ideal candidate.        </p>
+    </div>
+    <div class="container-workProcess">
+        <h3>How it works?</h3>
+
+        <h4>Create your freelance project</h4>
+        <p>Share your project requirements and preferences</p>
+
+
+        <h4>Invite freelancers to your project</h4>
+        <p>Send the brief to your favorite freelancers & review applications</p>
+
+
+        <h4>Accept a proposal</h4>
+        <p>Finalize your collaboration and pay securely on our platform</p>
+    </div>
+
+   <div class="container-one">
+        <div class="title1-container-one">1. Your project</div>
+        <div id="divider1">
+
+        </div>
+       <div class="container-one-main1"> 
+        <label class="projectTilte1">Project Title</label><br>
+        <input type="text" class="input-field-container-one" placeholder="Ex: Illustration for book, Logo, Landing page, etc">
+        
+        <div class="category-container-one">
+            <label>Category</label>
+            <div class="checkbox-group-container-one">
+                <label><input type="checkbox"> Logo Design</label>
+                <label><input type="checkbox"> Website Design</label>
+                <label><input type="checkbox"> Landing Page Design</label>
+                <label><input type="checkbox"> Branding Services</label>
+                <label><input type="checkbox"> Illustrations</label>
+                <label><input type="checkbox"> UI/UX Design</label>
+                <label><input type="checkbox"> Social Media Design</label>
+                <label><input type="checkbox"> Packaging Design</label>
+                <label><input type="checkbox"> Architecture & Interior Design</label>
+            </div>
+        </div>
+        
+        <div class="budget-container-one">
+            <label>Your Budget</label>
+            <div class="budget-radio-group">
+                <label><input type="radio" name="budget"> US$5-100</label>
+                <label><input type="radio" name="budget"> US$100-250</label>
+                <label><input type="radio" name="budget"> US$250-500</label>
+                <label><input type="radio" name="budget"> US$500-1,000</label>
+                <label><input type="radio" name="budget"> US$1,000-2,500</label>
+                <label><input type="radio" name="budget"> US$2,500-5,000</label>
+                <label><input type="radio" name="budget"> US$5,000-10,000</label>
+                <label><input type="radio" name="budget"> US$10,000-25,000</label>
+                <label><input type="radio" name="budget"> US$25,000+</label>
+            </div>
+        </div>
+        
+        <div class="timeframe-container-one">
+            <label>Your Timeframe</label>
+            <div class="timeframe-radio-group">
+                <label><input type="radio" name="timeframe"> Now</label>
+                <label><input type="radio" name="timeframe"> Within the next few weeks</label>
+                <label><input type="radio" name="timeframe"> In a month</label>
+                <label><input type="radio" name="timeframe"> Over a month</label>
+            </div>
+        </div>
+        
+        <label class="Locations-container-one">Select Preferred Locations (Optional)</label><br>
+        <input type="text" placeholder="Enter Location" class="location-Input-one"/>
+       </div>
+       </div>
+
+
+
+    <div class="container-two">
+        <div class="section-container-two">
+            <h3>2. Description & Attachments</h3>
+            <div id="divider1">
+
+            </div>
+            <label for="projectDescription">Project Description</label><br>
+            <textarea id="projectDescription" name="projectDescription" placeholder="Give more details about your project."></textarea>
+            
+            <label for="attachments">Files & Attachments (Optional)</label>
+            <p>Share any file you’d like. File types supported: JPG, PNG, SVG, PSD, AI, PDF, TTF and more.<br>Max size 500MB. <a href="#">Content Guidelines</a> and <a href="#">Accepted File Types</a></p>
+            
+            <div class="file-upload-container-two">
+                <input type="file" id="attachments-container-two" name="attachments" multiple>
+                <label for="attachments-container-two" class="custom-upload-btn" style="font-size:12px;">Choose File...</label>
+            </div>
+        </div>
+    </div>
+
+
+
+    
+
+
+    <div class="buttons-last">
+        <button class="btn btn-primary" id="btn-primary">Create Freelance Project</button>
+        <button class="btn btn-secondary">Cancel</button>
+    </div>
+    
+    
+</body>
+</html>
+<script>
+    const userAvatar = document.querySelector('.user-avatar'); // Corrected selection
+  const modal = document.getElementById('userModal');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const closeModal = document.getElementById('closeModal');
+  const logoutBtn = document.getElementById('logoutBtn');
+  // Open Modal
+  userAvatar.addEventListener('mouseover', () => {
+      modal.style.display = 'block';
+      modalOverlay.style.display = 'block';
+  });
+
+  // Close Modal
+  closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+  });
+
+  modalOverlay.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+  });
+
+  // Logout Functionality
+  logoutBtn.addEventListener('click', () => {
+      alert('Logged out successfully!');
+      window.location.href = '../main/profile/signup.html'; // Redirect to sign-in page
+  });
+
+
+
+  document.getElementById("btn-primary").addEventListener("click", ()=>{
+    alert("File Uploaded")
+  })
+</script>

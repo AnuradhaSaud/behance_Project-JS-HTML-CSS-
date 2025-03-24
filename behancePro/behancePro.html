@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Behance Pro</title>
+    <link rel="stylesheet" type="text/css" href="behancePro.css">
+    <script src="script.js" defer></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=check_small" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <!-- Left Side -->
+      <div class="nav-left">
+        <a href="../main/main.html"><img
+          src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg"
+          class="logo"
+          alt="Behance Logo"
+        /></a>
+
+        <div class="nav-links">
+          <div class="dropdown">
+            <a href="../main/main.html"><button class="dropbtn">
+              Explore <i class="fas fa-chevron-down"></i>
+            </button></a>
+            
+          </div>
+          <a href="../job/jobs.html">Jobs</a>
+          <a href="behancePro.html" class="pro-badge">Behance <span>PRO</span></a>
+          <div class="dropdown">
+            <button class="dropbtn"  onclick="location.href='../hireFreelance/hireFreelancer.html'">
+              Hire Freelancers <i class="fas fa-chevron-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">My Freelance Project</a>
+              <a href="#">Find Creatives</a>
+              <a href="#">Hiring on Behance</a>
+              <a href="#">New Freelance Project</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Center: Search Bar -->
+      <div class="search-container">
+        <input type="text" placeholder="Search..." class="search-bar" />
+        <button class="search-btn"><i class="fas fa-search"></i></button>
+      </div>
+
+      <!-- Right Side -->
+      <div class="nav-right">
+        <a href="#container-seven"><button class="btn-pro">Upgrade to <span>PRO</span></button></a>
+        <button class="btn-share">Share Your Work</button>
+        <i class="fas fa-envelope"></i>
+        <i class="fas fa-bell"></i>
+        <div class="user-avatar"></div>
+        <img
+          src="https://i.pinimg.com/736x/3e/e3/af/3ee3af2ae164bf631c5ebc13d40e95b1.jpg"
+          class="adobe-logo"
+          alt="Adobe Logo"
+        />
+      </div>
+    </nav>
+
+
+
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="userModal">
+        <span class="close-modal" id="closeModal"></span>
+        <div class="modal-content">
+            <img src="https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658" style="width:60px; height:60px; border:0.5px solid rgb(176, 176, 176); border-radius:100px; padding:1px"/>
+            <p><span id="modalUserName">Anuradha Saud</span></p>
+            <p id="emailId">anuradhasinghsaud@gmail.com</p>
+            <button id="modal-upgradeTo">Upgrade to <span>PRO</span></button>
+            <hr class="hrdivider">
+            <div class="modal-mid">
+              <a href="../main/profile/profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
+                <p>Adobe PortFolio</p>
+                <p>Edit my Availability</p>
+                <p>Starts Insights</p>
+                <p>Manage Freelance Projects</p>
+                <p>Purchase</p>
+                <p>Settings</p>
+            </div>
+            <hr class="hrdivider" >
+            <div class="modal-last">
+                <p>Manage Adobe ID</p>
+                <p>Help</p>
+                <hr class="hrdivider">
+                <p id="logoutBtn">Sign out</p>
+            </div>
+        
+        </div>
+    </div>
+
+
+
+
+
+    <div id="container-one">
+      <div class="container-one-div1">
+        <h1>
+          Accelerate Your Creative <br>Career with Behance Pro
+        </h1>
+        <p style="font-size:18px; margin-top:10px">
+          Take your career further with tools designed to showcase your<br> creativity, reach more people, and earn more—all in one place.
+        </p>
+      </div>
+
+      <div class="container-one-div2">
+        <button class="startBtn">Start Free Trial</button>
+        <button class="comparePlanBtn">Compare Plan</button>
+      </div>
+    </div>
+
+    <div id="container-two">
+      <h1 style="font-size:50px;">Why upgrade to Pro?</h1>
+
+      <div class="container-two-div1">
+        <div>
+          <img />
+          <h3 >Expand Your Reach</h3>
+          <p>
+            Reach more clients and collaborators and get your work seen by the
+            right people at the right time.
+          </p>
+          <a>Load More</a>
+        </div>
+        <div>
+          <img />
+          <h3>Grow Your Earnings</h3>
+          <p>
+            Get exclusive access to premium freelance jobs from top clients—with
+            no platform fees.
+          </p>
+          <a>Load More</a>
+        </div>
+        <div>
+          <img />
+          <h3>Stand Out from the Crowd</h3>
+          <p>
+            Showcase your unique brand with customizations that match who you
+            are as a creative.
+          </p>
+          <a>Load More </a>
+        </div>
+      </div>
+
+      <div class="container-two-div2">
+        <button>Start Free Trial</button>
+        <a href="#container-seven"><button>Compare Plan</button></a>
+      </div>
+    </div>
+
+    <div id="container-three">
+      <div class="container-three-div1">
+        <img />
+        <h5 style="color:rgba(0, 87, 255); font-size:20px">Expand Your Reach</h5>
+
+        <h1>Get your work seen by more clients and collaborators</h1>
+
+        <button>Start Free trial</button>
+      </div>
+
+      <div class="container-three-div2">
+        <div>
+          <div class="container-three-imgdiv1">
+            <img
+              src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_traffic_sources_2x.webp"
+            />
+          </div>
+          <div class="container-three-div3">
+            <div>
+              <h4>See who's viewed your profile and projects</h4>
+            <p>
+              Get detailed insights on who's engaging with your work and how
+              they found you, so you can follow up with potential clients and
+              collaborators.
+            </p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="container-three-imgdiv2">
+            <img
+              src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_scheduled_publish_2x.webp"
+            />
+          </div>
+          <div class="container-three-div3">
+            <div>
+              <h4>Get noticed</h4>
+            <p>
+              Schedule your projects to publish at a set day/time to get maximum
+              engagement with your audience.
+            </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="container-four">
+      <div>
+        <h1  style="font-size:50px;">45%</h1>
+      </div>
+      <div id="container-four-divider">
+
+      </div>
+      <div>
+        <p>
+          Pro members see their views and engagement increase by an average of
+        </p>
+        <h4>45% in their first month</h4>
+      </div>
+      <div>
+        <button>Start Free Trial</button>
+      </div>
+    </div>
+
+    <div  id="container-three">
+      <div class="container-three-div1">
+        <img />
+        <h5 style="color:rgba(0, 87, 255); font-size:20px">Earn More</h5>
+        <h1>Get access to more jobs and earn more with each job</h1>
+        <button>Start Free Trial</button>
+      </div>
+
+      <div class="container-three-div2">
+        <div>
+          <div>
+            <img class="container-three-imgdiv1"
+              src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_pricing_chart_2x.webp"
+            />
+          </div>
+          <div class="container-three-div3">
+            <div>
+             <div>
+              <h4>Confidently price your projects</h4>
+              <p>
+                Expert tools designed to guide you on pricing projects as
+                competitively as possible.
+              </p>
+             </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img class="container-three-imgdiv2"
+              src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_exclusive_freelance_jobs_2x.webp"
+            />
+          </div>
+          <div class="container-three-div3">
+           <div>
+            <h4 >Access exclusive freelance jobs</h4>
+            <p>
+              Receive weekly recommendations on freelance jobs that are a best
+              fit for you.
+            </p>
+           </div>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <img class="container-three-imgdiv1"
+              src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_zero_fees_2x.webp"
+            />
+          </div>
+          <div >
+            <div class="container-three-div3">
+              <div>
+                <h4>0% Platform fees</h4>
+                <p>
+                  Other marketplaces will take up to 50% of what you earn. With
+                  Behance Pro, not only will you pay no platform fees. Neither will
+                  your clients.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      <div id="container-four">
+        <div>
+          <h1 style="font-size:50px;">3-4x</h1>
+        </div>
+        <div id="container-four-divider">
+  
+        </div>
+        <div>
+          <p>
+            Pro members on average see 3x the amount of job <br>
+            inquiries and leads after subscribing to Behance Pro
+          </p>
+          <h4>45% in their first month</h4>
+        </div>
+        <div>
+          <button>Start Free Trial</button>
+        </div>
+      </div>
+  
+  
+
+  <div id="container-five">
+      <div class="container-three-div1">
+        <img />
+        <h5 style="color:rgba(0, 87, 255); font-size:20px">Stand Out from the Crowd</h5>
+        <h1>Personalize your profile to showcase your unique brand</h1>
+        <button>Start Free Trial</button>
+      </div>
+
+    <div class="container-three-div2">
+      <div>
+        <div>
+          <img  class="container-three-imgdiv1"
+            src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_go_dark_2x.webp"
+          />
+        </div>
+        <div class="container-three-div3">
+          <div>
+            <h4>Go dark</h4>
+            <p>
+              Give your profile a sleek, professional look with light and dark mode
+              options to match your style.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div>
+        <div>
+          <img class="container-three-imgdiv1"
+            src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_customize_profile_2x.webp"
+          />
+        </div>
+        <div class="container-three-div3">
+          <div>
+            <h4>Flexible organization</h4>
+            <p>
+              Organize your projects and services with custom sections, making it
+              easy for clients to navigate and explore your work.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div >
+        <div>
+          <img class="container-three-imgdiv1"
+            src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_drive_engagement_2x.webp"
+          />
+        </div>
+        <div class="container-three-div3">
+          <div>
+            <h4>Drive more engagement</h4>
+            <p>
+              Show people the best way to engage with you by adding a custom button
+              to your profile and projects.
+            </p>
+          </div>
+        </div>
+      </div>
+  
+      <div >
+        <div>
+          <img class="container-three-imgdiv1"
+            src="https://a5.behance.net/c193485c40fc1bcfdd086e407ba786c79283eeca/img/creator_pro/neue/pro_custom_website_2x.webp"
+          />
+        </div>
+        <div class="container-three-div3">
+          <div>
+            <h4>Your own custom website</h4>
+            <p>
+              Your Pro membership includes full access to Adobe Portfolio. Build up
+              to 5 fully-branded websites with free hosting and custom domains.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="divider2"></div>
+
+    <div id="container-six">
+      <div class="container-six-div1">
+        <h4 style="color:rgba(0, 87, 255);">Success Stories</h4>
+        <h1>Creators like you are <br>thriving with Behance Pro</h1>
+        <p>
+          Read more about how some of the world's best freelancers, art <br> directors,
+          and creatives use Behance Pro to grow their creative<br> careers on our
+          blog.
+        </p>
+      </div>
+
+      <div  class="container-six-div2">
+        <div>
+
+        </div>
+        <div>
+            <div>
+                <p>
+                  Behance Pro has been great. I have noticed I am getting more serious
+                  freelance inquiries since signing up for Pro. For me the best
+                  feature is the no fees on payments: that is a really big deal. Most
+                  other marketplaces do a 50/50 split, but Behance pays out a lot so
+                  that was my main reason for going pro.
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/22701b8306173.64ece5c06e693.png"
+                />
+                </div>
+                <div>
+                  <span>Harbor Bickmore</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                  Behance Pro has been great. I have noticed I am getting more serious
+                  freelance inquiries since signing up for Pro. For me the best
+                  feature is the no fees on payments: that is a really big deal. Most
+                  other marketplaces do a 50/50 split, but Behance pays out a lot so
+                  that was my main reason for going pro.
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/22701b8306173.64ece5c06e693.png"
+                />
+                </div>
+                <div>
+                  <span>Harbor Bickmore</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    I have had Behance for more than ten years. I have seen so many features and changes all these years, and Behance Pro is 
+                    <span>a new giant leap for the best creative platform</span>
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/def05f252108.5e4543661fe6c.jpg"
+                />
+                </div>
+                <div>
+                  <span>Danny Ivan</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    Behance has been 
+                    <span>my main source of clients this year</span>
+                    . I love Behance Pro, especially the analytics feature — it’s great for tweaking my portfolio and hashtags.
+                </p>
+              </div>
+              <div class="container-six-profile">
+               <div>
+                <img class="container-six-img"
+                src="https://mir-s3-cdn-cf.behance.net/user/115/0b5b3c1724119.61315f7c3c035.jpg"
+              />
+               </div>
+               <div>
+                <span>Kate Anto</span>
+               </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    I upgraded for 0% platform fees, and since then, selling assets on Behance has become one of 
+                    <span>my main sources of income</span>
+                </p>
+              </div>
+              <div class="container-six-profile">
+               <div>
+                <img class="container-six-img"
+                src="https://mir-s3-cdn-cf.behance.net/user/115/32cae6142323849.65913d8849069.jpg"
+              />
+               </div>
+                <div>
+                  <span>SilverStag Type Foundry</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    No platform fees on projects has saved us 
+                    <span>hundreds of dollars on each project.</span>
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/c7fd37592794853.65a0c6a85bb64.png"
+                />
+                </div>
+                <div>
+                  <span>Ulysses Design Co</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    I have found the Behance Pro account to be incredibly beneficial. One of my favorite features is the statistics tool, which has provided 
+                    <span>invaluable insights</span>
+                    into my audience's preferences and current interests, which has guided my asset creation decisions. Additionally, the 0% Platform Fees offered by Behance Pro is immensely helpful, and I highly appreciate this aspect.
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/5ac379111489797.65ce86b2c867b.jpg"
+                />
+                </div>
+                <div>
+                  <span>Alexandra Pacheco</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                  Behance Pro has been great. I have noticed I am getting more serious
+                  freelance inquiries since signing up for Pro. For me the best
+                  feature is the no fees on payments: that is a really big deal. Most
+                  other marketplaces do a 50/50 split, but Behance pays out a lot so
+                  that was my main reason for going pro.
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/22701b8306173.64ece5c06e693.png"
+                />
+                </div>
+                <div>
+                  <span>Harbor Bickmore</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    The features that made me upgrade without hesitation were the 0% Platform Fees and the Adobe Portfolio website, these features are really useful to me. I've also noticed that 
+                    <span>my views and leads have increased</span>
+                </p>
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/fdc3911344550601.6601f95d5a76d.png"
+                />
+                </div>
+                <div>
+                  <span>Tiago Leitao</span>
+                </div>
+              </div>
+        </div>
+
+        <div>
+            <div>
+                <p>
+                    The most valuable aspect of Behance Pro for us is the advanced analytics feature. These metrics, like search terms, location, and traffic sources, help us identify 
+                    <span>where to focus our design efforts</span>
+                    for maximum impact.
+                </p>
+
+              </div>
+              <div class="container-six-profile">
+                <div>
+                  <img class="container-six-img"
+                  src="https://mir-s3-cdn-cf.behance.net/user/115/3ab78a412937973.5ff6b3bb5f944.jpg"
+                />
+                </div>
+                <div>
+                  <span>Dirty barn</span>
+                </div>
+              </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div id="container-seven">
+        <div class="container-seven-div1">
+          <h1>Start your 7 day free trial today
+          </h1>
+          <p>Take your creative career to the next level by upgrading to Behance Pro.
+  
+          </p>
+        </div>
+        <div class="container-seven-div2">
+            <div>
+                <h4>Behance</h4>
+                <p>Showcase your work on the world's largest creative network and discover new inspiration.                </p>
+                <h3>Free</h3>
+                <ul>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Publish projects</li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Offer freelance services</li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Send client proposals                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Sell assets
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Mark yourself as being available for work
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Message others and get plugged into the community
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>
+                        Access to our freelance and full-time job board
+
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>
+                        Transact on Behance with 15-30% platform fees
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="pro-badge">Behance <span>PRO</span></h4>
+                <p>Tools to help you better showcase your work, understand your audience and make more money.
+
+                </p>
+                <h3>₹797.68/mo
+                </h3>
+                <ul>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Publish projects</li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Offer freelance services</li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Send client proposals                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Sell assets
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Mark yourself as being available for work
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Message others and get plugged into the community
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>
+                        Access to our freelance and full-time job board
+
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>
+                        0% Behance platform fees
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Advanced analytics                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>See who interacted with your work
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>See your top traffic sources and search terms
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Your own custom Adobe Portfolio website
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Password protected projects
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Link-only projects
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Project publish scheduling
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Pro badge
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Search by image
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Profile Sections
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Advanced profile options: dark theme, customizable button, section visibility
+                    </li>
+                    <li><span class="material-symbols-outlined">
+                      check_small
+                      </span>Pricing guidance
+                    </li>
+                </ul>
+
+                <button class="container-sevenbtn" >Start Free Trial</button>
+            </div>
+        </div>
+    </div>
+
+
+
+
+  </div>
+  <div style="height:40px; margin-top:20px">
+      <p style="text-align:center; font-size:14px;"> <b>Upgrade to Behance Pro today:</b> Get advanced analytics, a custom portfolio website, and more features to grow your creative career.
+          <span style="color:blue">Start your 7 day free trial</span></p>
+  </div>
+
+  <div id="footer">
+      <div class="footerdiv1">
+          <div>
+              <div>
+                  <h3>Behance</h3>
+                </div>
+          </div>
+          <div class="footerdiv2">
+              <div>
+                  <p>Built For Creatives</p>
+                  <ul>
+                    <li>Try Behance Pro</li>
+                    <li>Find Inspiration</li>
+                    <li>Get Hired</li>
+                    <li>Sell Creative Assets</li>
+                    <li>Sell Freelance Services</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Find Talent</p>
+                  <ul>
+                    <li>Post a Job</li>
+                    <li>Graphic Designers</li>
+                    <li>Photographers</li>
+                    <li>Video Editors</li>
+                    <li>Web Designers</li>
+                    <li>Illustrators</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Behance</p>
+                  <ul>
+                    <li>About Behance</li>
+                    <li>Adobe Portfolio</li>
+                    <li>Download the App</li>
+                    <li>Blog</li>
+                    <li>Careers</li>
+                    <li>Help Center</li>
+                    <li>Contact Us</li>
+                  </ul>
+                </div>
+                <div>
+                  <p>Social</p>
+                  <ul>
+                    <li><img />Instagram</li>
+                    <li><img />Twitter</li>
+                    <li><img />Pinterest</li>
+                    <li><img />Facebook</li>
+                    <li><img />LinkedIn</li>
+                  </ul>
+                </div>
+          </div>
+      </div>
+      <div id="divider"></div>
+
+    <div class="footer2ndPart">
+      <div>
+          <div>
+              <img style="width:50px; height:50px"
+                src="https://main--federal--adobecom.aem.live/federal/assets/svgs/adobe-wordmark-white-resize.svg"
+              />
+            </div>
+            <div>© 2025 Adobe Inc. All rights reserved.</div>
+      </div>
+
+     <div>
+      <div class="footer2ndPar-div1">
+          <span>English</span>
+          <span>TOU</span>
+          <span>Privacy</span>
+          <span>Community</span>
+          <span>Cookie preferences</span>
+          <span>Do not sell or share my personal information</span>
+        </div>
+     </div>
+    </div>
+  </div>
+  </body>
+</html>
+<script>
+
+
+  const userAvatar = document.querySelector('.user-avatar'); // Corrected selection
+  const modal = document.getElementById('userModal');
+  const modalOverlay = document.getElementById('modalOverlay');
+  const closeModal = document.getElementById('closeModal');
+  const logoutBtn = document.getElementById('logoutBtn');
+  // Open Modal
+  userAvatar.addEventListener('mouseover', () => {
+      modal.style.display = 'block';
+      modalOverlay.style.display = 'block';
+  });
+
+  // Close Modal
+  closeModal.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+  });
+
+  modalOverlay.addEventListener('click', () => {
+      modal.style.display = 'none';
+      modalOverlay.style.display = 'none';
+  });
+
+  // Logout Functionality
+  logoutBtn.addEventListener('click', () => {
+      alert('Logged out successfully!');
+      window.location.href = '../main/profile/signup.html'; // Redirect to sign-in page
+  });
+
+ // Function to handle file selection
+function handleFileUpload(event) {
+  const file = event.target.files[0]; // Get the selected file
+  if (file) {
+      const reader = new FileReader();
+      reader.onload = function (e) {
+          const imageURL = e.target.result;
+
+          // Set the background image
+          const container = document.getElementById('container-one');
+          container.style.backgroundImage = `url(${imageURL})`;
+          container.style.backgroundSize = '1450px 310px'; // Fixed size
+          container.style.backgroundPosition = 'center';
+          container.style.backgroundRepeat = 'no-repeat';
+
+          localStorage.setItem('bannerImage', imageURL);
+
+          document.querySelector('.container-one-div1').style.display = 'none';
+      };
+      reader.readAsDataURL(file);
+  }
+}
+
+// Retrieve user data from localStorage
+const userName = localStorage.getItem("userName");
+const userEmail = localStorage.getItem("userEmail");
+
+// Display user data on the profile page
+document.getElementById("modalUserName").textContent = userName || "Guest";
+document.getElementById("emailId").textContent = userEmail || "No email found";
+
+// Update the profile section
+document.querySelector("#profile-container h3").textContent = userName || "Guest";
+  
+</script>

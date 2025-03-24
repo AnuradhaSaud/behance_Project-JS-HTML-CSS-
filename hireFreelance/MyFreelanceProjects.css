@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "ABC Whyte", sans-serif;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;  /* Ensure it stays at the top */
+    z-index: 100;  /* Keeps navbar above other elements */
+    flex-wrap: wrap; /* Prevents breaking on small screens */
+}
+
+  /* Left Side */
+  .nav-left {
+    display: flex;
+    align-items: center;
+  }
+
+  .logo {
+    width: 80px;
+    margin-right: 15px;
+  }
+
+  /* Navigation Links */
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+
+  .nav-links a,
+  .dropbtn {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    font-size: 14px;
+    cursor: pointer;
+  }
+
+  .dropbtn {
+    border: none;
+    background: none;
+    font-size: 14px;
+  }
+
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background: white;
+    min-width: 150px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+  }
+
+  .dropdown-content a {
+    display: block;
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+  }
+
+  .dropdown-content a:hover {
+    background: #f1f1f1;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+  /* PRO Badge */
+  .pro-badge {
+    font-weight: bold;
+  }
+
+  .pro-badge span {
+    background: blue;
+    color: white;
+    font-size: 12px;
+    padding: 2px 5px;
+    border-radius: 4px;
+  }
+
+  /* Search Bar */
+  .search-container {
+    display: flex;
+    align-items: center;
+    background: #f1f1f1;
+    padding: 5px;
+    border-radius: 20px;
+  }
+
+  .search-bar {
+    border: none;
+    outline: none;
+    padding: 5px;
+    background: transparent;
+    width:450px;
+  }
+
+  .search-btn {
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+
+  /* Right Side */
+  .nav-right {
+    display: flex;
+    align-items: center;
+  }
+
+  .btn-pro,
+  .btn-share {
+    border: none;
+    padding: 8px 15px;
+    margin-right: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    border-radius:20px;
+  }
+
+  .btn-pro {
+    background: blue;
+    color: white;
+  }
+
+  .btn-share {
+    background: #f1f1f1;
+  }
+
+  .user-avatar {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-image: url("https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658");
+    background-size: cover;
+    background-position: center;
+    margin-right: 10px;
+  }
+
+  .adobe-logo {
+    width: 50px;
+  }
+
+  /* Icons */
+  .nav-right i {
+    font-size: 18px;
+    margin-right: 15px;
+    cursor: pointer;
+  }
+
+
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 38%;
+    left: 87%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    z-index: 1000;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 999;
+  }
+  
+  .modal-content {
+    margin-top: 5px;
+  }
+  
+  .modal-content > #emailId{
+    font-size:12px;
+    color:rgb(153, 153, 153)
+  }
+  
+  #modalUserName{
+    font-size:14px;
+    font-weight:bold;
+    margin-bottom:5px;
+  }
+  .modal-content #logoutBtn {
+    margin-top: 10px;
+    color:rgb(103, 103, 103);
+    border: none;
+    cursor: pointer;
+    background-color:white;
+    font-size:12px;
+    font-weight:bold;
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:10px;
+    
+  }
+  .modal-content #logoutBtn:hover{
+    background-color:rgb(193, 193, 193);
+    width:200px;
+  }
+  
+  
+  #modal-upgradeTo{
+    width:210px;
+    height:25px;
+    margin-top:10px;
+    font-size:12px;
+    background-color: rgba(0, 87, 255);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  
+  }
+  
+  .modal-mid p{
+    font-size:12px;
+    font-weight:bold;
+    color:rgb(103, 103, 103);
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:10px;
+  }
+  
+  .modal-mid p:hover{
+    background-color:rgb(193, 193, 193);
+    width:200px;
+  }
+  .modal-last p{
+    font-size:12px;
+    font-weight:bold;
+    color:rgb(103, 103, 103);
+    text-align:left;
+    margin-left:30px;
+    margin-bottom:10px;
+  }
+  
+  
+  .hrdivider{
+    margin:10px 0px 10px 0px
+  }
+  
+
+  #divider {
+    content: "";
+    width: 95%;
+    margin: auto;
+    height: 1px;
+    background: #ccc;
+  }
+
+
+     
+  #hireNavbar {
+    display: flex;
+    width: 900px;
+    margin: auto;
+    justify-content: space-between;
+    padding: 30px;
+  }
+  #hireNavbar > div > button {
+    border: none;
+    width: 180px;
+    height: 30px;
+    border-radius: 100px;
+    background-color: transparent;
+  }
+  #hireNavbar > div > button:hover {
+    color: blue;
+    background-color: rgb(244 246 254);
+  }
+
+
+  #main-container{
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    width:80%;
+    height: 570px;
+    margin:auto;
+  }
+  body{
+    background: rgb(191,222,255);
+    background: linear-gradient(0deg, rgba(191,222,255,1) 0%, rgba(255,255,255,1) 82%);
+  }
+
+  .container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    width:80%;
+    gap:30px;
+
+  }
+
+  .container > div{
+    padding:30px;
+    background-color:white;
+    border-radius:20px;
+
+  }
+
+  #main-container h1{
+    margin-bottom:10px;
+  }
+
+  #main-container > p{
+    font-size:15px;
+    letter-spacing:0.5px;
+    margin-bottom:33px;
+    color:rgb(60, 60, 60)
+  }
+
+  #main-container button{
+    width:250px;
+    height:35px;
+    color:white;
+    background-color:rgba(0, 59, 255, 1);
+    border:none;
+    border-radius:20px;
+    margin-top:33px;
+  }
+
+  #main-container button:hover{
+    background-color:rgba(0, 47, 154);
+  }
+
+  .num-circle {
+    width: 30px; /* Set width */
+    height: 30px; /* Set height (must match width for a perfect circle) */
+    border-radius: 0%; /* Makes the element circular */
+    background-color: rgb(179, 215, 255); /* Background color */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    font-size: 14px; /* Adjust font size for text inside the circle */
+}
+  .card > h3{
+    font-size:15px;
+    font-weight:30px;
+    margin-bottom:20px;
+    letter-spacing:0.3px;
+  }
+
+  .card > p{
+    font-size:13px;
+    margin-bottom:20px;
+    letter-spacing:0.3px;
+    color:rgb(60, 60, 60)
+  }
+
+  

@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" type="text/css" href="profile.css">
+    
+</head>
+<body>
+    
+    <nav class="navbar">
+        <!-- Left Side -->
+        <div class="nav-left">
+            <a href="../../main/main.html"><img src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg" class="logo" alt="Behance Logo"></a>
+            
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="../../main/main.html"><button class="dropbtn">
+                        Explore <i class="fas fa-chevron-down"></i>
+                      </button></a>
+                    
+                </div>
+                <a href="../../job/jobs.html">Jobs</a>
+                <a href="../../behancePro/behancePro.html" class="pro-badge">Behance <span>PRO</span></a>
+                <div class="dropdown">
+                    <button class="dropbtn"> <a href ="../../hireFreelance/hireFreelancer.html">Hire Freelancers</a> <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="../../hireFreelance/MyFreelanceProjects.html">My Freelance Project</a>
+                        <a href="../../job/jobs.html">Find Creatives</a>
+                        <a href="../../hireFreelance/hireFreelancer.html">Hiring on Behance</a>
+                        <a href="../../hireFreelance/newFreelanceProject.html">New Freelance Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center: Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+            <button class="btn-pro">Upgrade to <span>PRO</span></button>
+            <button class="btn-share">Share Your Work</button>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-avatar"></div>
+            <img src="https://i.pinimg.com/736x/3e/e3/af/3ee3af2ae164bf631c5ebc13d40e95b1.jpg" class="adobe-logo" alt="Adobe Logo">
+        </div>
+    </nav>
+
+
+
+<div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="userModal">
+        <span class="close-modal" id="closeModal"></span>
+        <div class="modal-content">
+            <img src="https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658" style="width:60px; height:60px; border:0.5px solid rgb(176, 176, 176); border-radius:100px; padding:1px"/>
+            <p><span id="modalUserName">Anuradha Saud</span></p>
+            <p id="emailId">anuradhasinghsaud@gmail.com</p>
+            <button id="modal-upgradeTo">Upgrade to <span>PRO</span></button>
+            <hr class="hrdivider">
+            <div class="modal-mid">
+                <a href="profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
+                <p>Adobe PortFolio</p>
+                <p>Edit my Availability</p>
+                <p>Starts Insights</p>
+                <p>Manage Freelance Projects</p>
+                <p>Purchase</p>
+                <p>Settings</p>
+            </div>
+            <hr class="hrdivider" >
+            <div class="modal-last">
+                <p>Manage Adobe ID</p>
+                <p>Help</p>
+                <hr class="hrdivider">
+                <p id="logoutBtn">Sign out</p>
+            </div>
+        </div>
+    </div>
+    
+ 
+
+
+    <div id="container-one">
+        <div class="container-one-div1">
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+            <img id="bannerImage" src="https://static.thenounproject.com/png/617749-200.png" alt="Banner Image"/>
+            <p>Add a Banner Image</p>
+            <p>Optimal dimensions 1200 x 210px</p>
+        </div>
+    </div>
+ 
+
+    
+    <div id="container-two">
+        <div class="container-two-div1">
+            <div id="profile-container" >
+                <img src="https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-100.png?cb=264615658"/>
+                <h3>Anuradha Saud</h3>
+            </div>
+            <p>India</p>
+            <div>
+                <button id="editbtn">Edit Profile Info</button><br>
+                <button id="customiseBtn">Customize Profile</button>
+            </div>
+            <div class="container-two-div4">
+                <div>
+                    <p> Hire Anuradha</p>
+                </div>
+                <div id="divider"></div>
+                <div class="container-two-div5">
+                    <p>Looking For Opportunities?</p>
+                    <p>Add our new 'Hire' section to your profile to let visitors know that you're looking for new opportunities.</p>
+                    <button>Edit Availability</button>
+
+                </div>
+            </div>
+
+            <p class="Member_Since">
+                Member Since: September 30, 2024
+            </p>
+        </div>
+        <div class="container-two-div2">
+            <div>
+                <p>Projects</p>
+                <div class="container-two-div3">
+
+                    <div>
+                        <div class="createBtnlogo1">
+                            <div class="createBtnlogo2">+</div>
+                        </div>
+                        <button class="createProjBtn">Create a Project</button>
+                    </div>
+                    
+                    <div class="container-two-div7">
+                        Get feedback, views, and appreciations. Public projects can be featured by our curators.
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-two-div6">
+            <button>Add Section Pro</button>
+        </div>
+    </div>
+
+
+    <div id="lastDivider">
+
+    </div>
+
+
+
+    <div style="height:40px; margin-top:20px">
+        <p style="text-align:center; font-size:14px;"> <b>Upgrade to Behance Pro today:</b> Get advanced analytics, a custom portfolio website, and more features to grow your creative career.
+            <span style="color:blue">Start your 7 day free trial</span></p>
+    </div>
+
+    <div id="footer">
+        <div class="footerdiv1">
+            <div>
+                <div>
+                    <h3>Behance</h3>
+                  </div>
+            </div>
+            <div class="footerdiv2">
+                <div>
+                    <p>Built For Creatives</p>
+                    <ul>
+                      <li>Try Behance Pro</li>
+                      <li>Find Inspiration</li>
+                      <li>Get Hired</li>
+                      <li>Sell Creative Assets</li>
+                      <li>Sell Freelance Services</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>Find Talent</p>
+                    <ul>
+                      <li>Post a Job</li>
+                      <li>Graphic Designers</li>
+                      <li>Photographers</li>
+                      <li>Video Editors</li>
+                      <li>Web Designers</li>
+                      <li>Illustrators</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>Behance</p>
+                    <ul>
+                      <li>About Behance</li>
+                      <li>Adobe Portfolio</li>
+                      <li>Download the App</li>
+                      <li>Blog</li>
+                      <li>Careers</li>
+                      <li>Help Center</li>
+                      <li>Contact Us</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p>Social</p>
+                    <ul>
+                      <li><img />Instagram</li>
+                      <li><img />Twitter</li>
+                      <li><img />Pinterest</li>
+                      <li><img />Facebook</li>
+                      <li><img />LinkedIn</li>
+                    </ul>
+                  </div>
+            </div>
+        </div>
+        <div id="divider"></div>
+
+      <div class="footer2ndPart">
+        <div>
+            <div>
+                <img style="width:50px; height:50px"
+                  src="https://main--federal--adobecom.aem.live/federal/assets/svgs/adobe-wordmark-white-resize.svg"
+                />
+              </div>
+              <div>© 2025 Adobe Inc. All rights reserved.</div>
+        </div>
+
+       <div>
+        <div class="footer2ndPar-div1">
+            <span>English</span>
+            <span>TOU</span>
+            <span>Privacy</span>
+            <span>Community</span>
+            <span>Cookie preferences</span>
+            <span>Do not sell or share my personal information</span>
+          </div>
+       </div>
+      </div>
+    </div>
+
+    
+</body>
+</html>
+<script>
+
+    const userAvatar = document.querySelector('.user-avatar'); // Corrected selection
+    const modal = document.getElementById('userModal');
+    const modalOverlay = document.getElementById('modalOverlay');
+    const closeModal = document.getElementById('closeModal');
+    const logoutBtn = document.getElementById('logoutBtn');
+    // Open Modal
+    userAvatar.addEventListener('mouseover', () => {
+        modal.style.display = 'block';
+        modalOverlay.style.display = 'block';
+    });
+
+    // Close Modal
+    closeModal.addEventListener('click', () => {
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+    });
+
+    modalOverlay.addEventListener('click', () => {
+        modal.style.display = 'none';
+        modalOverlay.style.display = 'none';
+    });
+
+    // Logout Functionality
+    logoutBtn.addEventListener('click', () => {
+        alert('Logged out successfully!');
+        window.location.href = 'signup.html'; // Redirect to sign-in page
+    });
+  
+   // Function to handle file selection
+function handleFileUpload(event) {
+    const file = event.target.files[0]; // Get the selected file
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            const imageURL = e.target.result;
+
+            // Set the background image
+            const container = document.getElementById('container-one');
+            container.style.backgroundImage = `url(${imageURL})`;
+            container.style.backgroundSize = '1450px 310px'; // Fixed size
+            container.style.backgroundPosition = 'center';
+            container.style.backgroundRepeat = 'no-repeat';
+
+            localStorage.setItem('bannerImage', imageURL);
+
+            document.querySelector('.container-one-div1').style.display = 'none';
+        };
+        reader.readAsDataURL(file);
+    }
+}
+
+
+
+window.addEventListener('load', function () {
+    const savedImage = localStorage.getItem('bannerImage');
+    if (savedImage) {
+        const container = document.getElementById('container-one');
+        container.style.backgroundImage = `url(${savedImage})`;
+        container.style.backgroundSize = '1450px 310px';
+        container.style.backgroundPosition = 'center';
+        container.style.backgroundRepeat = 'no-repeat';
+
+        document.querySelector('.container-one-div1').style.display = 'none';
+    }
+});
+
+document.getElementById('container-one').addEventListener('click', function () {
+    document.getElementById('fileInput').click();
+});
+
+document.getElementById('fileInput').addEventListener('change', handleFileUpload);
+
+// Retrieve user data from localStorage
+const userName = localStorage.getItem("userName");
+const userEmail = localStorage.getItem("userEmail");
+
+// Display user data on the profile page
+document.getElementById("modalUserName").textContent = userName || "Guest";
+document.getElementById("emailId").textContent = userEmail || "No email found";
+
+// Update the profile section
+document.querySelector("#profile-container h3").textContent = userName || "Guest";
+    
+    
+</script>

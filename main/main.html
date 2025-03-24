@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js" defer></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+</head>
+<body>
+
+    <nav class="navbar">
+        <!-- Left Side -->
+        <div class="nav-left">
+            <a href="main.html"><img src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg" class="logo" alt="Behance Logo"></a>
+            
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="../main/main.html"><button class="dropbtn">
+                        Explore <i class="fas fa-chevron-down"></i>
+                      </button></a>
+                  
+                </div>
+                <a href="../job/jobs.html">Jobs</a>
+                <a href="../behancePro/behancePro.html" class="pro-badge">Behance <span>PRO</span></a>
+                <div class="dropdown">
+                    <button class="dropbtn"> <a href ="../hireFreelance/hireFreelancer.html">Hire Freelancers</a> <i class="fas fa-chevron-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="../hireFreelance/MyFreelanceProjects.html">My Freelance Project</a>
+                        <a href="../job/jobs.html">Find Creatives</a>
+                        <a href="../hireFreelance/hireFreelancer.html">Hiring on Behance</a>
+                        <a href="../hireFreelance/newFreelanceProject.html">New Freelance Project</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Center: Search Bar -->
+        <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-bar">
+            <button class="search-btn"><i class="fas fa-search"></i></button>
+        </div>
+
+        <!-- Right Side -->
+        <div class="nav-right">
+            <button class="btn-pro">Upgrade to <span>PRO</span></button>
+            <button class="btn-share">Share Your Work</button>
+            <i class="fas fa-envelope"></i>
+            <i class="fas fa-bell"></i>
+            <div class="user-avatar"></div>
+            <img src="https://i.pinimg.com/736x/3e/e3/af/3ee3af2ae164bf631c5ebc13d40e95b1.jpg" class="adobe-logo" alt="Adobe Logo">
+        </div>
+    </nav>
+
+
+    <div class="modal-overlay" id="modalOverlay"></div>
+    <div class="modal" id="userModal">
+        <span class="close-modal" id="closeModal"></span>
+        <div class="modal-content">
+            <img src="https://a5.behance.net/d2cab6c543eaf6bcebb1daa9d408d0939823ee49/img/profile/no-image-230.png?cb=264615658" style="width:60px; height:60px; border:0.5px solid rgb(176, 176, 176); border-radius:100px; padding:1px"/>
+            <p><span id="modalUserName">Anuradha Saud</span></p>
+            <p id="emailId">anuradhasinghsaud@gmail.com</p>
+            <button id="modal-upgradeTo">Upgrade to <span>PRO</span></button>
+            <hr class="hrdivider">
+            <div class="modal-mid">
+                <a href="../main/profile/profile.html" style="text-decoration:none;"><p>Behance Profile</p></a>
+                <p>Adobe PortFolio</p>
+                <p>Edit my Availability</p>
+                <p>Starts Insights</p>
+                <p>Manage Freelance Projects</p>
+                <p>Purchase</p>
+                <p>Settings</p>
+            </div>
+            <hr class="hrdivider" >
+            <div class="modal-last">
+                <p>Manage Adobe ID</p>
+                <p>Help</p>
+                <hr class="hrdivider">
+                <p id="logoutBtn">Sign out</p>
+            </div>
+        </div>
+    </div>
+
+
+   <div id="story--maindiv">
+    <div class="story-container" id="storiesContainer">
+        <div class="story" onclick="document.getElementById('fileInput').click()">
+            <div class="story-circle add-story">+</div>
+        </div>
+       
+    </div>
+    
+    <span class="story-text">Add Story</span>
+    
+    <input type="file" id="fileInput" accept="image/*">
+    
+    <div class="story-modal" id="storyModal" onclick="closeStory()">
+        <img id="storyImage" src="" alt="Story">
+        <button class="remove-story-btn" onclick="removeCurrentStory(event)">Remove Story</button>
+    </div>
+   </div>
+    
+    
+    
+    
+
+
+    <div id="container-one">
+        <div>
+            <h3 onclick="ForYouPost()"><span class="material-symbols-outlined">
+                favorite
+                </span>For You</h3>
+            <div id="divider"  > </div>
+            <h3 onclick="followingPost()"><span class="material-symbols-outlined">
+                group
+                </span>Following
+            </h3>
+        </div>
+    </div>
+
+
+
+
+    <div id="divider2"></div>
+
+
+
+    <div id="post-container">
+
+    </div>
+
+    <div id="followingpost">
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/b1d4ed315931.6570f4ba2d5c8.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/3b5d95165480545.Y3JvcCwyNTAxLDE5NTYsMCwxNDg.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/190184183916397.65dcf149d00be.png" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/5707f347051095.64d3d4e277161.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/f5673f131736211.Y3JvcCwxNTM0LDEyMDAsMzQsMA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/a99824211612223.Y3JvcCw0NDkwLDM1MTIsODc4LDA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d3bbb2178252035.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/10da4c196255113.Y3JvcCwxNzQ4LDEzNjgsNTE5LDA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/2c5c0788754781.Y3JvcCwxMTA2LDg2NSwwLDA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/664089213114597.Y3JvcCwxNTUwLDEyMTIsMCww.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/49f6c9220417771.Y3JvcCwxMDAxLDc4Myw4NCww.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/a7e981159283107.Y3JvcCwxMDgwLDg0NCwwLDUw.jpeg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d3fad7185632879.Y3JvcCw1NjEsNDM5LDU2MSw4Mw.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/1bb756208337141.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/1bb756208337141.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/1bb756208337141.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d3fad7185632879.Y3JvcCw1NjEsNDM5LDU2MSw4Mw.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808/a99824211612223.Y3JvcCw0NDkwLDM1MTIsODc4LDA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/d3bbb2178252035.Y3JvcCwxMTkyLDkzMywxMDMsMA.jpg" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+
+        <div class="Post-Div">
+            <div>
+                <img src="https://mir-s3-cdn-cf.behance.net/projects/max_808_webp/1bb756208337141.Y3JvcCwxODQxLDE0NDAsMzYwLDA.png" alt="CompanyName" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>Company Name</p></div>
+                <div>
+                    <p>Likes: 33</p>
+                    <p>Views: 66</p>
+                </div>
+            </div>
+        </div> 
+        
+        
+    </div>
+
+
+</body>
+</html>
+<script>
+    const storyWrapper = document.querySelector(".story-wrapper");
+
+function scrollLeft() {
+    storyWrapper.scrollBy({ left: -100, behavior: "smooth" });
+}
+
+function scrollRight() {
+    storyWrapper.scrollBy({ left: 100, behavior: "smooth" });
+}
+
+
+
+let posts = [];
+
+(async function () {
+    try {
+        let res = await fetch("https://cwproject-f5310-default-rtdb.firebaseio.com/posts.json");
+        let response = await res.json();
+
+        if (!response) {
+            console.error("No data received from Firebase.");
+            return;
+        }
+
+        posts = Object.values(response);
+        console.log("Fetched posts:", posts);  // Debugging: Check if posts have data
+        displayPosts(posts);
+    } catch (error) {
+        console.error("Error fetching posts:", error);
+    }
+})();
+
+
+function displayPosts(arr) {
+    let container = document.getElementById("post-container");
+    if (!container) {
+        console.error("Element with ID 'post-container' not found!");
+        return;
+    }
+
+    container.innerHTML = "";
+
+    arr.forEach((post) => {
+        const { Image = "default.jpg", CompanyName = "Unknown", totalLike = 0, View = 0 } = post || {}; 
+
+        const box = document.createElement("div");
+        box.setAttribute("class", "Post-Div");
+
+        box.innerHTML = `
+            <div>
+                <img src="${Image}" alt="${CompanyName}" class="post-img">
+            </div>
+            <div class="post-div2">  
+                <div><p>${CompanyName}</p></div>
+                <div>
+                    <p>Likes: ${totalLike}</p>
+                    <p>Views: ${View}</p>
+                </div>
+            </div>
+        `;
+
+        container.append(box);
+    });
+}
+
+document.getElementById("fileInput").addEventListener("change", function(event) {
+    const file = event.target.files[0];
+    if (file) {
+        const reader = new FileReader();
+        reader.onload = function(e) {
+            const imageUrl = e.target.result;
+            addStory(imageUrl);
+            saveStory(imageUrl); // Save the new story
+        };
+        reader.readAsDataURL(file);
+    }
+});
+
+function addStory(imageUrl) {
+    const storiesContainer = document.getElementById("storiesContainer");
+
+    // Create a new story element
+    const storyDiv = document.createElement("div");
+    storyDiv.classList.add("story");
+
+    storyDiv.innerHTML = `
+        <img src="${imageUrl}" onclick="showStory('${imageUrl}')">
+      
+      
+    `;
+
+    storiesContainer.appendChild(storyDiv);
+}
+
+// Show story in modal
+function showStory(imageUrl) {
+    document.getElementById("storyImage").src = imageUrl;
+    document.getElementById("storyModal").style.display = "flex";
+    setTimeout(closeStory, 5000);
+}
+
+// Close story modal
+function closeStory() {
+    document.getElementById("storyModal").style.display = "none";
+}
+
+// Save multiple stories in localStorage
+function saveStory(imageUrl) {
+    let stories = JSON.parse(localStorage.getItem("stories")) || [];
+    stories.push(imageUrl);
+    localStorage.setItem("stories", JSON.stringify(stories));
+}
+
+// Load multiple stories on page refresh
+function loadStories() {
+    let stories = JSON.parse(localStorage.getItem("stories")) || [];
+    stories.forEach(imageUrl => addStory(imageUrl));
+}
+
+// Remove a story from UI & localStorage
+function removeCurrentStory(event) {
+    event.stopPropagation(); // Prevent modal from closing
+    let currentImageUrl = document.getElementById("storyImage").src;
+    let stories = JSON.parse(localStorage.getItem("stories")) || [];
+
+    // Remove the story from localStorage
+    stories = stories.filter(story => story !== currentImageUrl);
+    localStorage.setItem("stories", JSON.stringify(stories));
+
+    // Remove the story from the UI
+    let storiesContainer = document.getElementById("storiesContainer");
+    let storyElements = storiesContainer.getElementsByTagName("img");
+
+    for (let story of storyElements) {
+        if (story.src === currentImageUrl) {
+            story.parentElement.remove();
+            break;
+        }
+    }
+
+    // Close the modal
+    closeStory();
+}
+
+
+// Load stories when the page loads
+window.onload = loadStories;
+
+
+
+const userAvatar = document.querySelector('.user-avatar'); // Corrected selection
+const modal = document.getElementById('userModal');
+const modalOverlay = document.getElementById('modalOverlay');
+const closeModal = document.getElementById('closeModal');
+const logoutBtn = document.getElementById('logoutBtn');
+// Open Modal
+userAvatar.addEventListener('mouseover', () => {
+    modal.style.display = 'block';
+    modalOverlay.style.display = 'block';
+});
+
+// Close Modal
+closeModal.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalOverlay.style.display = 'none';
+});
+
+modalOverlay.addEventListener('click', () => {
+    modal.style.display = 'none';
+    modalOverlay.style.display = 'none';
+});
+
+// Logout Functionality
+logoutBtn.addEventListener('click', () => {
+    alert('Logged out successfully!');
+    window.location.href = '../main/profile/signup.html'; // Redirect to sign-in page
+});
+
+
+
+function ForYouPost(){
+    const forYouPost = document.getElementById("post-container");
+    forYouPost.style.display = "grid";
+
+    const following = document.getElementById("followingpost");
+    following.style.display = "none";
+}
+
+
+function followingPost(){
+    const forYouPost = document.getElementById("post-container");
+    forYouPost.style.display = "none";
+
+    const following = document.getElementById("followingpost");
+    following.style.display = "grid";
+}
+
+
+
+</script>
