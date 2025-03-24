@@ -5,7 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-/* Navbar Styling */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -14,12 +13,11 @@
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
-    top: 0;  /* Ensure it stays at the top */
-    z-index: 100;  /* Keeps navbar above other elements */
-    flex-wrap: wrap; /* Prevents breaking on small screens */
+    top: 0;  
+    z-index: 100; 
+    flex-wrap: wrap; 
 }
 
-/* Left Side */
 .nav-left {
     display: flex;
     align-items: center;
@@ -30,7 +28,6 @@
     margin-right: 15px;
 }
 
-/* Navigation Links */
 .nav-links {
     display: flex;
     align-items: center;
@@ -80,7 +77,6 @@
     display: block;
 }
 
-/* PRO Badge */
 .pro-badge {
     font-weight: bold;
 }
@@ -93,7 +89,6 @@
     border-radius: 4px;
 }
 
-/* Search Bar */
 .search-container {
     display: flex;
     align-items: center;
@@ -176,13 +171,11 @@
     font-size: 24px;
 }
 
-/* Improve Story Text */
 .story p {
     font-size: 12px;
     margin-top: 5px;
 }
 
-/* Container Layout Fixes */
 #container-one > div {
     display: flex;
     padding: 20px;
@@ -202,7 +195,6 @@
     margin: 0px 13px;
 }
 
-/* Material Symbols */
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
@@ -211,7 +203,6 @@
   'opsz' 24;
 }
 
-/* Post Container */
 #container-one {
     overflow: visible; 
 }
@@ -223,7 +214,6 @@
     background-color: rgb(214, 214, 214);
 }
 
-/* Grid Layout for Posts */
 #post-container{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -238,7 +228,6 @@
     padding: 22px;
 }
 
-/* Responsive Grid Layout */
 @media (max-width: 1024px) {
     #post-container {
         grid-template-columns: repeat(2, 1fr);
@@ -251,14 +240,12 @@
     }
 }
 
-/* Post Images */
 .Post-Div > div img {
     width: 100%;
     max-width: 330px;
     height: 230px;
 }
 
-/* Post Info */
 .post-div2 {
     display: flex;
     justify-content: space-between;
@@ -280,15 +267,14 @@
     margin-right: 10px;
 }
 
-/* Story Container */
 .story-container {
-    display: flex;  /* Ensures stories are in a row */
-    gap: 30px;  /* Adds spacing between stories */
-    overflow-x: auto;  /* Enables horizontal scrolling if needed */
+    display: flex;  
+    gap: 30px; 
+    overflow-x: auto;  
     padding: 10px;
     background: white;
     border-radius: 10px;
-    white-space: nowrap;  /* Prevents wrapping to the next line */
+    white-space: nowrap;  
    
 }
 #story--maindiv{
@@ -300,7 +286,6 @@
     font-size:12px;
 }
 
-/* Individual Story */
 .story {
     width: 60px;
     height: 60px;
@@ -314,7 +299,6 @@
     background-color:#0057ff;
 }
 
-/* Story Image */
 .story img {
     width: 100%;
     height: 100%;
@@ -322,7 +306,6 @@
     border-radius: 50%;
 }
 
-/* Add Story Circle */
 .story-circle {
     position: absolute;
     font-size:30px;
@@ -337,7 +320,6 @@
     
 }
 
-/* Remove Story Button */
 .remove-story-btn {
     background: red;
     color: white;
@@ -348,14 +330,13 @@
     border-radius: 5px;
     margin-top: 10px;
     position: absolute;
-    bottom: 20px; /* Position below the modal */
+    bottom: 20px; 
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
 }
 
 
-/* Story Modal */
 .story-modal {
     display: none;
     position: fixed;

@@ -12,7 +12,6 @@
 <body>
 
     <nav class="navbar">
-        <!-- Left Side -->
         <div class="nav-left">
             <a href="main.html"><img src="https://1000logos.net/wp-content/uploads/2020/11/Behance-Logo-2005.jpg" class="logo" alt="Behance Logo"></a>
             
@@ -37,13 +36,11 @@
             </div>
         </div>
 
-        <!-- Center: Search Bar -->
         <div class="search-container">
             <input type="text" placeholder="Search..." class="search-bar">
             <button class="search-btn"><i class="fas fa-search"></i></button>
         </div>
 
-        <!-- Right Side -->
         <div class="nav-right">
             <button class="btn-pro">Upgrade to <span>PRO</span></button>
             <button class="btn-share">Share Your Work</button>
@@ -442,7 +439,7 @@ let posts = [];
         }
 
         posts = Object.values(response);
-        console.log("Fetched posts:", posts);  // Debugging: Check if posts have data
+        console.log("Fetched posts:", posts);  
         displayPosts(posts);
     } catch (error) {
         console.error("Error fetching posts:", error);
@@ -489,7 +486,7 @@ document.getElementById("fileInput").addEventListener("change", function(event) 
         reader.onload = function(e) {
             const imageUrl = e.target.result;
             addStory(imageUrl);
-            saveStory(imageUrl); // Save the new story
+            saveStory(imageUrl); 
         };
         reader.readAsDataURL(file);
     }
@@ -498,7 +495,7 @@ document.getElementById("fileInput").addEventListener("change", function(event) 
 function addStory(imageUrl) {
     const storiesContainer = document.getElementById("storiesContainer");
 
-    // Create a new story element
+  
     const storyDiv = document.createElement("div");
     storyDiv.classList.add("story");
 
@@ -511,42 +508,35 @@ function addStory(imageUrl) {
     storiesContainer.appendChild(storyDiv);
 }
 
-// Show story in modal
 function showStory(imageUrl) {
     document.getElementById("storyImage").src = imageUrl;
     document.getElementById("storyModal").style.display = "flex";
     setTimeout(closeStory, 5000);
 }
 
-// Close story modal
 function closeStory() {
     document.getElementById("storyModal").style.display = "none";
 }
 
-// Save multiple stories in localStorage
 function saveStory(imageUrl) {
     let stories = JSON.parse(localStorage.getItem("stories")) || [];
     stories.push(imageUrl);
     localStorage.setItem("stories", JSON.stringify(stories));
 }
 
-// Load multiple stories on page refresh
 function loadStories() {
     let stories = JSON.parse(localStorage.getItem("stories")) || [];
     stories.forEach(imageUrl => addStory(imageUrl));
 }
 
-// Remove a story from UI & localStorage
 function removeCurrentStory(event) {
-    event.stopPropagation(); // Prevent modal from closing
+    event.stopPropagation(); 
     let currentImageUrl = document.getElementById("storyImage").src;
     let stories = JSON.parse(localStorage.getItem("stories")) || [];
 
-    // Remove the story from localStorage
     stories = stories.filter(story => story !== currentImageUrl);
     localStorage.setItem("stories", JSON.stringify(stories));
 
-    // Remove the story from the UI
     let storiesContainer = document.getElementById("storiesContainer");
     let storyElements = storiesContainer.getElementsByTagName("img");
 
@@ -557,17 +547,15 @@ function removeCurrentStory(event) {
         }
     }
 
-    // Close the modal
     closeStory();
 }
 
 
-// Load stories when the page loads
 window.onload = loadStories;
 
 
 
-const userAvatar = document.querySelector('.user-avatar'); // Corrected selection
+const userAvatar = document.querySelector('.user-avatar'); 
 const modal = document.getElementById('userModal');
 const modalOverlay = document.getElementById('modalOverlay');
 const closeModal = document.getElementById('closeModal');
@@ -589,10 +577,9 @@ modalOverlay.addEventListener('click', () => {
     modalOverlay.style.display = 'none';
 });
 
-// Logout Functionality
 logoutBtn.addEventListener('click', () => {
     alert('Logged out successfully!');
-    window.location.href = '../main/profile/signup.html'; // Redirect to sign-in page
+    window.location.href = '../main/profile/signup.html'; 
 });
 
 
